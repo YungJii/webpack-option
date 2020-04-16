@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	
+	<title><%= (htmlWebpackPlugin.options.config.title) %></title>
+</head>
+<body>
+
+	<input type="button" id="btn"></input>
+	<p>1111222111111</p>
+</body>
+
+
+
+	<script src="./js/base.js"></script>
+	<script>
+		document.getElementById('btn').onclick = function() {
+			import('./js/other.js')
+		}
+	</script>
+</html>
